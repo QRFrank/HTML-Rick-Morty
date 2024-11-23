@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Rick and Morty</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        div.contenedor-formulario {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rick and Morty</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="audiovisuales.html">AudioVisuales</a></li>
+                <li><a class="active" href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Rick and Morty, Contactanos 
+
+    <hr>
+<!-- Formulario -->
+    <div class="contenedor-formulario">
+        <form action="">
+            <!-- Nombre -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Rick" required minlength="3">
+            <!-- Apellido -->
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ej: Sanchez" required minlength="3">
+            <!-- Email -->
+            <label for="margin">Email</label>
+            <input type="email" id="mail" name="mail" placeholder="Escribe aqui tu Email" required>
+            <!-- Origen -->
+            <label for="planeta">Planeta de Origen</label>
+            <select name="planeta" id="planeta">
+                <optgroup label="Dimenciones">
+                    <option value="C137">Dimension C-137</option>
+                    <option value="C132">Dimensión C-132</option>
+                    <option value="C131">Dimension C-131</option>
+                    <option value="Prime">Dimensión Prime</option>
+                    <option value="C500A">Dimensión C-500A</option>
+                    <option value="304X">Dimensión 304-X</option>
+                    <option value="Paramiano">Dimensión Paramiano</option>
+                </optgroup>
+                <optgroup label="Mundos">
+                    <option value="Cronenberg">Mundo Cronenberg</option>
+                    <option value="Fantacia">Mundo de Fantasía</option>
+                </optgroup>
+            </select>
+            <!-- Comentarios -->
+            <label for="comentario">Comentario: </label>
+            <textarea name="comentario" id="comentario" placeholder="Deje su Comentario"></textarea>
+            <!-- Motivo de Contacto -->
+            <label for="motivo">Motivo de Contacto </label>
+            <input type="radio" id="motivo" name="motivo"><i>Viaje interdemencional</i>
+            <input type="radio" id="motivo" name="motivo"><i>Reclamo</i>
+            <input type="radio" id="motivo" name="motivo"><i>Otro</i>
+            <!-- Boton Enviar Formulario -->
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos Reservador &copy; 2023</p>
+    </footer>
+</body>
+</html>

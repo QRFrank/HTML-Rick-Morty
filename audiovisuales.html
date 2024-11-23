@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Rick and Morty</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Rick and Morty</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a class="active" href="audiovisuales.html">AudioVisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Rick and Morty, Intro y Temporadas</h1>
+    <hr>
+    <!-- video -->
+    <div class="centrado">
+        <video class="centrado" src="/assets/videos/rickAndMorty  Intro .mp4" autoplay muted></video>
+    </div>
+    <br>
+    <!-- audio -->
+    <div class="centrado">
+        <img src="assets/images/pepinillos.jpeg" alt="rick-and-morty-1" width="50px" height="50px">
+        <audio class="centrado" src="/assets/audio/audioRickPepinillo.mp3" autoplay controls></audio>
+    </div>
+    <br>
+    <!-- imagenes -->
+    <section class="centrado">
+        <div class="gallery">
+            <a href="/assets/images/img temporadas/temporada-1.jpeg" target="_blank">
+                <img src="/assets/images/img temporadas/temporada-1.jpeg" alt="temporada-1">
+            </a>
+            <div class="desc">temporada-1</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/images/img temporadas/temporada-2.jpeg" target="_blank">
+                <img src="/assets/images/img temporadas/temporada-2.jpeg" alt="temporada-2">
+            </a>
+            <div class="desc">temporada-2</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/images/img temporadas/temporada-3.jpeg" target="_blank">
+                <img src="/assets/images/img temporadas/temporada-3.jpeg" alt="temporada-3">
+            </a>
+            <div class="desc">temporada-3</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/images/img temporadas/temporada-4.jpeg" target="_blank">
+                <img src="/assets/images/img temporadas/temporada-4.jpeg" alt="temporada-4">
+            </a>
+            <div class="desc">temporada-4</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/images/img temporadas/temporada-5.jpeg" target="_blank">
+                <img src="/assets/images/img temporadas/temporada-5.jpeg" alt="temporada-5">
+            </a>
+            <div class="desc">temporada-5</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/images/img temporadas/temporada-6.jpeg" target="_blank">
+                <img src="/assets/images/img temporadas/temporada-6.jpeg" alt="temporada-6">
+            </a>
+            <div class="desc">temporada-6</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/images/img temporadas/temporada-7.jpeg" target="_blank">
+                <img src="/assets/images/img temporadas/temporada-7.jpeg" alt="temporada-7">
+            </a>
+            <div class="desc">temporada-7</div>
+        </div>
+
+    </section>
+    <br>
+
+    <footer class="footer">
+        <p>Derechos Reservador &copy; 2023</p>
+    </footer>
+</body>
+</html>

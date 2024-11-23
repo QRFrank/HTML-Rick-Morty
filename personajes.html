@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>Rick and Morty</title>
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+
+            background-color: #FFF;
+        }
+
+        td {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 5px 10px;
+        }
+
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 5px 10px;
+            background-color: rgb(162, 162, 162);
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <h1>Rick and Morty</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a  class="active" href="personajes.html">Personajes</a></li>
+                <li><a href="audiovisuales.html">AudioVisuales</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Rick and Morty, Personajes</h1>
+
+    <hr>
+
+    <div class="container">
+        <table>
+            <colgroup>
+                <col style="background-color: rgb(207,207,207);">
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <th>Personajes</th>
+            <th>Especie</th>
+            <th>Edad</th>
+            <th>Estado</th>
+            <th>Ocupacion</th>
+            <th>Planeta de origen</th>
+
+            <tr>
+                <td>Rick Sánchez</td>
+                <td>Humano mejorado ciberneticamente</td>
+                <td>70 (10 de septiembre de 1954)</td>
+                <td>Vivo</td>
+                <td>Científico,
+                    Inventorm,
+                    Traficante de armas</td>
+                <td>Tierra (Dimensión C-137)</td>
+            </tr>
+            <tr>
+                <td>Morty Smith</td>
+                <td>Humano</td>
+                <td>14</td>
+                <td>Vivo</td>
+                <td>
+                    Estudiante,
+                    Rey de los Caballeros del Sol</td>
+                <td>Tierra (Dimensión Prime)</td>
+            </tr>
+            <tr>
+                <td>Rick Prime</td>
+                <td>Humano modificado</td>
+                <td>70 (cronológicamentel)
+                    30+ (biologicamente)</td>
+                <td>Muerto (presuntamente)</td>
+                <td>---</td>
+                <td>Tierra (Dimension Prime)</td>
+            </tr>
+            <tr>
+                <td>Evil Morty</td>
+                <td>Humano mejorado cibernéticamente</td>
+                <td>14</td>
+                <td>Vivo</td>
+                <td>Presidente de la ciudadela (anteriormente)</td>
+                <td>Tierra (Dimension 79⊢⊇V)</td>
+            </tr>
+            <tr>
+                <td>Beth Smith</td>
+                <td>Humano</td>
+                <td>35</td>
+                <td>Vivo</td>
+                <td>Cirugana de Caballos</td>
+                <td>Tierra (Dimension C-131)</td>
+            </tr>
+            <tr>
+                <td>Jerry Smith</td>
+                <td>Humano</td>
+                <td>35</td>
+                <td>Vivo</td>
+                <td>Apicultor</td>
+                <td>Tierra (Dimension 5126)</td>
+            </tr>
+            <tr>
+                <td>Summer Smith</td>
+                <td>Humano</td>
+                <td>17-18</td>
+                <td>Viva</td>
+                <td>Estudiante</td>
+                <td>Tierra (Dimensión C-132)</td>
+            </tr>
+            <tr>
+                <td>Diane Sánchez</td>
+                <td>Humano</td>
+                <td>Desconocida</td>
+                <td>Fallecida</td>
+                <td>---</td>
+                <td>Tierra (Dimensión C-137)</td>
+            </tr>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p>Derechos Reservador &copy; 2023</p>
+    </footer>
+</body>
+</html>
